@@ -9,6 +9,7 @@ const { authorize } = require('../middleware/authorize');
 // POSTS
 router.post('/', protect, postController.addPost);
 router.get('/', postController.getPosts);
+router.get('/:postId', postController.getPostById);
 router.patch('/:postId', protect, postController.updatePost);
 router.delete('/:postId', protect, postController.deletePost);
 
