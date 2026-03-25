@@ -1,22 +1,22 @@
-# 📝 Blog Post API
+# Blog Post API
 
 A RESTful backend API for a blog platform built with **Node.js**, **Express**, **MongoDB**, and **JWT Authentication**. Users can register, log in, create posts, and interact through comments.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🔐 JWT Authentication & Authorization
-- 👤 User registration & login
-- 📝 Blog post CRUD (owner-only modifications)
-- 💬 Comment system (owner-only modifications)
-- 📬 Public Postman API documentation
-- ⚠️ Centralized error handling
-- 🌱 Production-ready project structure
+- JWT Authentication & Authorization
+- User registration & login
+- Blog post CRUD (owner-only modifications)
+- Comment system (owner-only modifications)
+- Public Postman API documentation
+- Centralized error handling
+- Production-ready project structure
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -28,7 +28,7 @@ A RESTful backend API for a blog platform built with **Node.js**, **Express**, *
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 server/
@@ -59,15 +59,15 @@ server/
 
 ---
 
-## 📬 API Documentation
+## API Documentation
 
 Full documentation with example requests, responses, authentication setup, and environment variables is available on Postman:
 
-👉 **[View Postman Docs](https://documenter.getpostman.com/view/51751420/2sBXcHieYs)**
+*[View Postman Docs](https://documenter.getpostman.com/view/51751420/2sBXcHieYs)**
 
 ---
 
-## 🔐 Authentication
+## Authentication
 
 Protected routes require a valid JWT token passed in the request header:
 
@@ -79,9 +79,9 @@ Obtain a token by logging in via `POST /users/login`.
 
 ---
 
-## 🧩 API Endpoints
+## API Endpoints
 
-### 👤 Users
+### Users
 
 | Method | Endpoint | Description | Auth |
 |---|---|---|---|
@@ -89,7 +89,7 @@ Obtain a token by logging in via `POST /users/login`.
 | `POST` | `/users/login` | Login and receive JWT | ❌ |
 | `GET` | `/users/profile` | Get current user profile | ✅ |
 
-### 📝 Posts
+### Posts
 
 | Method | Endpoint | Description | Auth |
 |---|---|---|---|
@@ -98,7 +98,7 @@ Obtain a token by logging in via `POST /users/login`.
 | `PATCH` | `/posts/:postId` | Update a post | ✅ Owner only |
 | `DELETE` | `/posts/:postId` | Delete a post | ✅ Owner / Adminonly |
 
-### 💬 Comments
+### Comments
 
 | Method | Endpoint | Description | Auth |
 |---|---|---|---|
@@ -109,7 +109,7 @@ Obtain a token by logging in via `POST /users/login`.
 
 ---
 
-## 🛡 Authorization Rules
+## Authorization Rules
 
 | Resource | Public Read | Modify |
 |---|---|---|
@@ -119,7 +119,7 @@ Obtain a token by logging in via `POST /users/login`.
 
 ---
 
-## ⚠️ Error Response Format
+## Error Response Format
 
 All errors return a consistent JSON structure:
 
